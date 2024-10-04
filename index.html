@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Sticky Navbar CSS */
+        .navbar {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            color: white;
+        }
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Remove general section padding */
+        section {
+            padding: 0;
+        }
+        /* Assign padding to specific sections */
+        #about, #projects, #skills, #contact {
+            padding: 100px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+ 
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Hero Section Styling */
+        .hero-section {
+            background-image: url('images/home/4.jpg');/* Ensure correct image path */
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Ensure full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            filter: brightness(0.8) contrast(1.2); /* Adjust image vibrancy */
+        }
+
+        /* Hero Banner Container */
+        .hero-container {
+            width: 100%; /* Full width container */
+            max-width: 1200px; /* Define a maximum width for the container */
+            height: 500px; /* Define height for the container */
+            margin: 0 auto; /* Center the container */
+            overflow: hidden; /* Ensure the hero banner doesn't overflow */
+            position: relative;
+        }
+
+        /* Hero Banner Styling */
+        .hero-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the hero banner scales nicely within the container */
+            display: block;
+        }
+
+        /* General Styling */
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            background-color: #ff5c5c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: #e85050;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container"></div> 
+            <div class="hero-content">
+                <h1>Your Data-Driven Future Starts Here</h1>
+                <p>Your guide to 10X your productivity using Chatgpt automation!</p>
+                <a href="lead-magnet-link.html" class="hero-btn">Grab My Free Guide</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .about-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        /* Image Container */
+        .image-container {
+            width: 150px; /* Define the container size */
+            height: 150px; /* Make sure the container is square */
+            margin: 0 auto; /* Center the container */
+            border: 2px solid #ddd; /* Optional border */
+            overflow: hidden; /* Ensure the image doesn't overflow the container */
+            border-radius: 8px; /* Optional: Rounded corners */
+        }
+
+        /* Image Styling */
+        .image-container img {
+            width: 100%; /* Ensure the image fits the container */
+            height: 100%; /* Ensure the image fills the container */
+            object-fit: cover; /* Scale the image properly within the container */
+            display: block;
+        }
+        /* General Styling */
+        .about-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 20px auto;
+            max-width: 800px; /* Limit text width for better readability */
+        }
+    </style>
+</head>
+<body>
+
+    <section id='about',class="about-section">
+        <div class="container">
+            <h1 style="text-align: center;"> Welcome to my portfolio</h1>
+            <div class="image-container">
+                <img src="images/about/1.jpg" alt="Profile Image"> <!-- Replace with correct image path -->
+            </div>
+            <p>Hi! I'm Shuqing Ke, a data scientist with a passion for transforming raw data into actionable insights. With over 5 years'experience across industries like energy and e-commerce, I specialize in machine learning, ETL development, and data visualization. I’ve worked with tools like Python, PySpark, and SQL to build predictive models and design robust data pipelines for companies like BP, Shell, and CGI. Whether it's creating dashboards or deploying machine learning models, I enjoy helping businesses harness the power of data for smarter decision-making.
+
+                Outside of work, I love hip-hop dancing and exploring art galleries to fuel my creative side. I’m also an avid reader, always diving into the latest tech trends or a good book. Let’s connect and see how I can help your business thrive through data-driven solutions!
+            </p>  
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .projects-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .projects-section h1 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+        .card-footer a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section id='projects',class="projects-section">
+        <div class="container">
+            <h1 style="text-align: center;"> Latest Project</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/projects/1.png" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Segmentation</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Blog Post</a> | <a href="https://github.com/Teake1404/all_work_and_no_play/blob/main/profiling_established_partners.ipynb">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/projects/2.png" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Survival Analysis</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Blog Post</a> | <a href="https://github.com/Teake1404/all_work_and_no_play/blob/main/survival_analysis_new_partners.ipynb">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/projects/3.jpg" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Blog Post</a> | <a href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Skills Section Styling */
+        .skills-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .skills-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px
+            text-align: center;
+        }
+        .skills-section h5 {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        .progress {
+            height: 20px;
+            background-color: #efe9ee;
+        }
+        .progress-bar {
+            background-color: #5bc0de;
+        }
+        .skill-category {
+            margin-bottom: 30px;
+        }
+        .skill-level {
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+         /* Image Sizing for Skill Categories */
+        .skill-img {
+            width: 70px; /* Set the desired width */
+            height: 60; /* Ensure the height adjusts proportionally */
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <section id='skills',class="skills-section">
+        <h1 style="text-align: center;">My Skills</h1>
+        <p style="text-align: center;">1 - Basic &nbsp; 2 - Novice &nbsp; 3 - Intermediate &nbsp; 4 - Advanced &nbsp; 5 - Expert</p>
+        <p style="text-align: center;"<em>Hover cursor over bars for more information</em></p>
+
+        <div class="container">
+            <div class="row">
+                <!-- Programming Languages -->
+                <div class="col-lg-3 col-md-6 col-sm-12 skill-category">
+                    <img style="text-align: center;" src="images/skills/1.png" alt="Programming Languages" class="skill-img mb-3"> <!-- Image above category -->
+                    <h5>Programming Languages</h5>
+                    <p>Python - 4</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="> 5 years of experience"></div>
+                    </div>
+                    <p>SQL - 4</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="> 5 years of experience"></div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="col-lg-3 col-md-6 col-sm-12 skill-category">
+                    <img style="text-align: center;" src="images/skills/7.png" alt="Machine Learning" class="skill-img mb-3">
+                    <h5>Machine Learning</h5>
+                    <p>Supervised ML - 4</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="Regression & Classification"></div>
+                    </div>
+                    <p>Unsupervised ML - 4</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="UMAP,K-Means,TSNE etc."></div>
+                    </div>
+                    <p>Deep Learning - 1</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5"></div>
+                    </div>
+                    <p>Deployment - 1</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="Dash app"></div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="col-lg-3 col-md-6 col-sm-12 skill-category">
+                    <img style="text-align: center;" src="images/skills/2.png" alt="Data Analysis" class="skill-img mb-3">
+                    <h5>Data Analysis</h5>
+                    <p>ETL - 4</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="Pandas & Numpy"></div>
+                    </div>
+                    <p>Data Visualization - 4</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="Plotly, Seaborn & PowerBI dashboards"></div>
+                    </div>
+                    <p>Statistics - 4</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="From Gussian to Bayesian Statistics"></div>
+                    </div>
+                </div>
+                 <!-- Other Skills -->
+                 <div class="col-lg-3 col-md-6 col-sm-12 skill-category">
+                    <img style="text-align: center;" src="images/skills/8.avif" alt="Other Skillss" class="skill-img mb-3">
+                    <h5>Other Skills</h5>
+                    <p>Web Analytics - 3</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="> 3 years of experience in Google Analytics"></div>
+                    </div>
+                    <p>Video Production - 2</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="Chatgpt & AI video"></div>
+                    </div>
+                    <p>SEO - 3</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" data-toggle="tooltip" title="> 3 years of experience"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS and Popper.js for tooltips -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Initialize Bootstrap tooltips -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .contact-section {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .contact-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .contact-details i {
+            font-size: 1.5rem;
+        }
+        .contact-details a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+        }
+        /* Footer and Sign-up Box */
+        .footer-subscribe {
+            margin-top: 50px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 40px; /* Added space between sign-up and social icons */
+        }   
+        .footer-subscribe h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .footer-subscribe p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 300px;
+            max-width: 100%;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <section id='contact',class="contact-section">
+        <div class="container">
+            <h1 style="text-align: center;">Contact Me</h1> 
+            <h5 style="text-align: center;">Sign up for my newsletter to get the latest updates!</h5>
+            <div class="footer-subscribe">
+                <form id="subscribe-form" action="#" method="post" class="form-inline justify-content-center">
+                    <input type="email" name="email" class="form-control mr-2" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="social-icons">
+                <a href="mailto:datawowai@gmail.com"><img src="icons/gmail.png" alt="Gmail"><br>Gmail</a>
+                <a href="https://www.linkedin.com/in/shuqing-ke-9202b292/"><img src="icons/linkedin.png" alt="LinkedIn"><br>LinkedIn</a>
+                <a href="https://www.instagram.com/datawowai/"><img src="icons/instagram.jpeg" alt="Instagram"><br>Instagram</a>
+                <a href="https://github.com/Teake1404"><img src="icons/github.png" alt="GitHub"><br>GitHub</a>
+                <a href="#"><img src="icons/medium.png" alt="Medium"><br>Medium</a>
+                <a href="https://www.youtube.com/@Datawowai"><img src="icons/youtube.png" alt="YouTube"><br>YouTube</a>
+                <a href="https://www.tiktok.com/@datawowai"><img src="icons/tiktok.png" alt="TikTok"><br>TikTok</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
