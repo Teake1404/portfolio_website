@@ -157,7 +157,7 @@
             </div>
 
             <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url('images/home/1.jpg');">
+            <div id="slider2" class="carousel-item" style="background-image: url('images/home/1.jpg');">
                 <div class="hero-container"></div>
                 <div class="hero-content">
                     <h1>Transform Your Workflow</h1>
@@ -189,6 +189,20 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    
+    <!-- JavaScript to set active slide to Slide 2 when accessed via #slider2 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the URL has #slider2
+            if (window.location.hash === "#slider2") {
+                // Scroll to the carousel section and set the carousel to Slide 2 (index 1)
+                document.getElementById("slider2").scrollIntoView();
+                $('#homeCarousel').carousel(1);
+            }
+        });
+    </script>
 
     <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
